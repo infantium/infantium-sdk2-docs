@@ -1,0 +1,12 @@
+com.infantium.feedback
+com.infantium.labeler
+com.infantium.network
+com.infantium.network.protocol
+com.infantium.overwrites
+com.infantium.sdk2
+com.infantium.sdk2.nodes
+com.infantium.sdk2.walker
+com.infantium.sdk2.walker.events
+com.infantium.sdk2.walker.models
+com.infantium.services
+com.infantium.terminalsolvers
