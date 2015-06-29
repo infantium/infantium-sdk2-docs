@@ -31,8 +31,7 @@
 
   
     <link rel="top" title="Infantium SDK v2 2.0 documentation" href="index.html"/>
-        <link rel="next" title="SDK Installation" href="installation.html"/>
-        <link rel="prev" title="Quick Start" href="quick_start.html"/> 
+        <link rel="prev" title="Saved Games API (cloud-saving)" href="saved_games.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -72,14 +71,16 @@
           
           
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Content Graph</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#graph-walker">Graph Walker</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#player">Player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#load-content-graph">Load Content Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#graph-traversing">Graph traversing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#evaluate-congitive-nodes">Evaluate congitive nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#background-networking">Background networking</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">SDK Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#using-gradle">Using gradle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#gradle">Gradle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#unity-plugin">Unity Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="publishing.html">Publish your content</a><ul>
@@ -89,11 +90,16 @@
 <li class="toctree-l2"><a class="reference internal" href="publishing.html#versioning-the-content">Versioning the content</a></li>
 <li class="toctree-l2"><a class="reference internal" href="publishing.html#pricing-your-content">Pricing your content</a></li>
 <li class="toctree-l2"><a class="reference internal" href="publishing.html#publisher-metadata">Publisher metadata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing.html#apk-validation-process">APK Validation Process</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="saved_games.html">Saved Games API</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="saved_games.html">Saved Games API (cloud-saving)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="saved_games.html#serialize-your-data-for-storage">Serialize your data for storage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="saved_games.html#migrating-saved-games">Migrating Saved Games</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Content Graph</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#graph-walker">Graph Walker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#player">Player</a></li>
 </ul>
 </li>
 </ul>
@@ -172,10 +178,8 @@ identified before content consumption even though is is not the normal case.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="installation.html" class="btn btn-neutral float-right" title="SDK Installation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="quick_start.html" class="btn btn-neutral" title="Quick Start" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="saved_games.html" class="btn btn-neutral" title="Saved Games API (cloud-saving)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

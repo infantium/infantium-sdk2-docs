@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Saved Games API &mdash; Infantium SDK v2 2.0 documentation</title>
+  <title>Saved Games API (cloud-saving) &mdash; Infantium SDK v2 2.0 documentation</title>
   
 
   
@@ -31,6 +31,7 @@
 
   
     <link rel="top" title="Infantium SDK v2 2.0 documentation" href="index.html"/>
+        <link rel="next" title="Content Graph" href="concepts.html"/>
         <link rel="prev" title="Publish your content" href="publishing.html"/> 
 
   
@@ -78,13 +79,9 @@
 <li class="toctree-l2"><a class="reference internal" href="quick_start.html#background-networking">Background networking</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="concepts.html">Content Graph</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="concepts.html#graph-walker">Graph Walker</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts.html#player">Player</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">SDK Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#using-gradle">Using gradle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#gradle">Gradle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#unity-plugin">Unity Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="publishing.html">Publish your content</a><ul>
@@ -96,8 +93,14 @@
 <li class="toctree-l2"><a class="reference internal" href="publishing.html#publisher-metadata">Publisher metadata</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Saved Games API</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Saved Games API (cloud-saving)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#serialize-your-data-for-storage">Serialize your data for storage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#migrating-saved-games">Migrating Saved Games</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Content Graph</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html#graph-walker">Graph Walker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html#player">Player</a></li>
 </ul>
 </li>
 </ul>
@@ -124,7 +127,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Saved Games API</li>
+    <li>Saved Games API (cloud-saving)</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -141,20 +144,41 @@
 <p class="first admonition-title">Warning</p>
 <p class="last">NOT PRODUCTION READY</p>
 </div>
-<div class="section" id="saved-games-api">
-<h1>Saved Games API<a class="headerlink" href="#saved-games-api" title="Permalink to this headline">¶</a></h1>
-<p>Infantium provides cloud storage to save the progess of a player inside a content. Maybe
+<div class="section" id="saved-games-api-cloud-saving">
+<h1>Saved Games API (cloud-saving)<a class="headerlink" href="#saved-games-api-cloud-saving" title="Permalink to this headline">¶</a></h1>
+<p>Infantium provides cloud storage to save the progress of a player inside a content. Maybe
 you want to save in wich scene the player left the game or some item the player has achieved
 during gameplay.</p>
-<p>Saved Games API is a cross platform API. It doesn&#8217;t matter if your content is developed to be
-run as an HTML5 page or as a native Android app. You only need to save your game data in
-infantium and it will be persisted among different devices, allowing a player to start consuming
-content on a device and switching to another without loosing progress.</p>
-<p>All data must be transformed to a valid JSON format that is convenient for your content.
-Data format that you choose when saving a progress JSON file must be conveniently known
-beforehand. Infantium saved API also handles versioning the progress data allowing the
-developer to write migration functions that allow progress to be updated if needed
-when new content is avaliable trough content updates on IPC panel.</p>
+<p>It doesn&#8217;t matter if your content is developed to be run as an HTML5 page or as a native Android app.
+By saving you game data in infantium cloud it will be instantly avaliable among different devices
+allowing player to start right where they left away the content without loosing content progress.</p>
+<p>Infantium cloud-saving API also handles versioning the saved state data allowing for an easier
+content updating mechanisms by simply writing a data migration function for each avaliable update
+if needed.</p>
+<div class="section" id="serialize-your-data-for-storage">
+<h2>Serialize your data for storage<a class="headerlink" href="#serialize-your-data-for-storage" title="Permalink to this headline">¶</a></h2>
+<p>Your content is responsible of serializing the incoming data and produce a byte array as the saved
+data that will be saved in infantium cloud services. We encourage developers to use some serializing
+libraries like protocol buffers or gson.</p>
+<dl class="docutils">
+<dt>Java:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="https://code.google.com/p/google-gson/">https://code.google.com/p/google-gson/</a></li>
+<li><a class="reference external" href="https://developers.google.com/protocol-buffers/">https://developers.google.com/protocol-buffers/</a></li>
+</ul>
+</dd>
+<dt>XML serializer for Java:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="http://simple.sourceforge.net/">http://simple.sourceforge.net/</a></li>
+</ul>
+</dd>
+<dt>Unity:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="https://github.com/jacobdufault/fullserializer">https://github.com/jacobdufault/fullserializer</a></li>
+</ul>
+</dd>
+</dl>
+</div>
 <div class="section" id="migrating-saved-games">
 <h2>Migrating Saved Games<a class="headerlink" href="#migrating-saved-games" title="Permalink to this headline">¶</a></h2>
 <p>Writing a progress update is easy, you just only need to notify infantium SDK of your
@@ -168,6 +192,8 @@ a player requires it.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="concepts.html" class="btn btn-neutral float-right" title="Content Graph" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="publishing.html" class="btn btn-neutral" title="Publish your content" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
