@@ -6,7 +6,7 @@ Publish your content
 
 .. warning:: Infantium Partners Connect site is down. Please, contact marc@infantium.com for publishing requests.
 
-Partners must refer to `Infantium Partners Connect <https://ipc.infantium.com/>`_ for content publication.
+**Partners must refer to `Infantium Partners Connect <https://ipc.infantium.com/>`_ for content publication.**
 
 Publishing steps
 ''''''''''''''''
