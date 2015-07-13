@@ -6,10 +6,13 @@ Quick Start Guide
 
 Download SDK2
 '''''''''''''
- * `Link Unity SDK2 Plugin <https://github.com/infantium/sdk2/raw/master/unity/infantium-sdk2.unitypackage/>`_
  
- * `Link Android SDK2 <https://github.com/infantium/sdk2/raw/master/android/sdk2-release_2.0-9be475c.aar/>`_
- * `Link Android Dependencies <https://github.com/infantium/sdk2/raw/master/android/sdk2-libs-9be475c.jar/>`_
+**Unity:**
+ * `Unity SDK2 Plugin <https://github.com/infantium/sdk2/raw/master/unity/infantium-sdk2.unitypackage/>`_
+ 
+**Android:**
+ * `Android SDK2 <https://github.com/infantium/sdk2/raw/master/android/sdk2-release_2.0-9be475c.aar/>`_
+ * `Android Dependencies <https://github.com/infantium/sdk2/raw/master/android/sdk2-libs-9be475c.jar/>`_
 
 
 Content Graph File
