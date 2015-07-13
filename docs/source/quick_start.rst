@@ -53,6 +53,8 @@ the :ref:`content-graph`. Starting from there, each time that there is a transit
 on content with different associated node a walk must be notified to SDK. The walk will be
 validated for invalid jumps and if succeeded, walker will point to selected node_id.
 
+Note: In unity WalkerManager is automatically instantiated when creating an instance of InfantiumSDK.
+
 .. code-block:: java
 
     // Get walker from walker manager
@@ -96,6 +98,12 @@ into that node using the "moveNext" function.
 
 The `evaluate` function can only be called once each time a node is visited, ensure it is called
 before moving to next node to capture all evaluation events that happened when visiting node.
+
+
+Unity developers
+''''''''''''''''
+Inside .unitypackage there is a simple project example that contains all avaliable SDK2 function calls. Please refer to it for C# syntax, but it is similar as exposed here.
+
 
 
 
