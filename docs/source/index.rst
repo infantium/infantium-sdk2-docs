@@ -1,12 +1,16 @@
 .. Infantium SDK v2 documentation master file, created by
-   sphinx-quickstart on Tue Jun  2 11:29:41 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 Welcome to Infantium SDK v2's documentation!
 ============================================
 
-Contents:
+.. image:: _static/infantium_icon.png
+   :alt: Infantium
+
+For more info contact us on `Infantium Home <https://infantium.com/>`_.
+
+
+Contents
+''''''''
 
 .. toctree::
    :maxdepth: 2
