@@ -15,11 +15,12 @@ Contents
 .. toctree::
    :maxdepth: 2
    
-   quick_start
    installation
+   concepts
+   guide_generic
+   guide_unity
    publishing
    saved_games
-   concepts
 
 
 
