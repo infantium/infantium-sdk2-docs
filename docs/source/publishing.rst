@@ -1,18 +1,18 @@
 .. _content-publishing:
 
-====================
-Publish your content
-====================
+===============================
+Sending your content for review
+===============================
 
-.. warning:: Infantium Partners Connect site is down. Please, contact marc@infantium.com for publishing requests.
+.. warning:: Infantium Partners Connect site is not available yet. Please, contact marc@infantium.com for publishing requests.
 
 **Partners must refer to `Infantium Partners Connect <https://ipc.infantium.com/>`_ for content publication.**
 
 Publishing steps
 ''''''''''''''''
 
-Content partners must submit their content to be evaluated by Infantium congitive experts in order to 
-be published in Infantim Platform. Those steps are required to ensure content has minimum required quality and well integrated within SDK specs. 
+Content partners must submit their content to be evaluated by Infantium congitive experts in order to
+be published in Infantim Platform. Those steps are required to ensure content has minimum required quality and well integrated within SDK specs.
 
 0. Content Partner sumbits a content integration request
 1. Infantium evaluation of content cognitive aspects and data gathering evaluation
@@ -30,11 +30,12 @@ Updates on content
 
 Each content in published must have a defined version code. This version code is an int starting on 1, it will be incremented in 1 for each version published into Infantium platform. When a content update is performed by default same :ref:`content-graph` is applied to content. If there are changes on :ref:`content-graph`, an evaluation of content must be performed before update submit.
 
-Pricing your content
-''''''''''''''''''''
+..
+  Pricing your content
+  ''''''''''''''''''''
 
-You must set your price as one of the defined price tiers that will be provided in step 4 of publishing.The pricet will be automatically converted to local country currency for those countries
-not using euros.
+  You must set your price as one of the defined price tiers that will be provided in step 4 of publishing.The pricet will be automatically converted to local country currency for those countries
+  not using euros.
 
 Content metadata
 ''''''''''''''''
@@ -78,7 +79,3 @@ and can improve the visibility of your content inside infantium.
 
 - Mini Banner [200x100]
 - Panoramic Banner [300x700]
-
-
-
-
